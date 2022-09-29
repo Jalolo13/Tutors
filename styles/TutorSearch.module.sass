@@ -1,0 +1,69 @@
+.section__tutor_search
+    height: calc(100vh - 110px)
+    background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(42,158,31,0) 100%)
+
+.section__tutor_search__header
+    width: 100%
+    height: 70px
+    background: #128244ec
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 40px
+
+.section__tutor__header_number
+    color: #fff
+    padding-bottom: 5px
+    transition: .3s
+    &:hover
+        border-bottom: 2px solid #fff
+
+.section__tutor__header_inner
+    position: relative
+
+.section__tutor__header_profile
+    display: flex
+    align-items: center
+    padding: 15px 10px
+    transition: .3s
+    border-radius: 5px
+    &:hover
+        background: #12ae44
+        cursor: pointer
+
+.section__header_profile_link
+    color: #d1d1d1
+    font-family: 'Inter Tight', sans-serif
+    margin-left: 15px
+
+.section__tutor__profile_modal
+    display: none
+    position: absolute
+    width: 300px
+    background: #c9c9c9
+    border-radius: 5px
+    left: -90px
+    bottom: -117px
+    padding: 15px
+    transition: .3s
+    &.active
+        display: block
+
+.section__tutor__profile_login, .section__tutor__profile_reg
+    width: 100%
+    color: #fff
+    padding: 10px 0
+    transition: .3s
+    margin-top: 15px
+    box-shadow: 0 0 5px black
+
+.section__tutor__profile_login
+    background: #118721
+    margin-top: 0
+    &:hover
+        background: #22a120
+
+.section__tutor__profile_reg
+    background: #c44545
+    &:hover
+        background: #e33636

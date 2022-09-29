@@ -1,0 +1,61 @@
+.header
+    background: url('../assets/header-bg.jpg') center center no-repeat
+    background-size: cover
+    height: 110px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.header__title
+    font-size: 56px
+    text-transform: uppercase
+    color: #3a8523
+    text-shadow: black 0 0 3px
+
+.header__search
+    position: absolute
+    right: 30px
+    padding: 10px
+    background: rgba(255,255,255,.8)
+    border: none
+    border-radius: 5px
+    &:focus
+        background: rgba(255,255,255,1)
+
+.burger_menu
+    height: 30px
+    width: 30px
+    z-index: 50
+    position: absolute
+    display: flex
+    align-items: center
+    left: 70px
+    top: 40px
+
+.burger_btn
+    width: 40px
+    height: 20px
+    position: relative
+    cursor: pointer
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        width: 40px
+        background-color: white
+        height: 2px
+    &::after
+        content: ''
+        position: absolute
+        bottom: 1px
+        width: 40px
+        background-color: white
+        height: 2.5px
+
+    span
+        position: absolute
+        top: 8px
+        width: 40px
+        background-color: white
+        height: 2px
